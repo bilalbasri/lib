@@ -1,0 +1,80 @@
+@import "~bourbon/app/assets/stylesheets/bourbon";
+@import "partials/rootcolor/rootColor";
+@import "partials/_variables";
+@import "partials/breakpoints";
+
+@import "~bootstrap/scss/bootstrap";
+@import "~bootstrap-touchspin/dist/jquery.bootstrap-touchspin.min.css";
+
+// /*Partials*/
+@import "partials/_mixins";
+@import "partials/_fonts";
+ @import "partials/_commons";
+
+
+// /*Helpers*/
+@import "helper/jquery.fancybox.min.css";
+ @import "helper/custom-theme";
+ @import "helper/commun";
+@import "helper/mixin";
+ @import "helper/type";
+ @import "helper/form";
+@import "helper/icons";
+@import "helper/pagination";
+@import "helper/print";
+@import "helper/slick";
+// @import "helper/jolisearch";
+
+
+// /*Layouts*/
+@import "layouts/breadcrumb/breadcrumb-v1";
+// @import "layouts/header/header-v1";
+// @import "layouts/footer/footer-v1";
+// @import "layouts/footer/copyright";
+
+
+// /*Components*/
+@import "components/alert";
+@import "components/drop-down";
+// @import "components/mainmenu";
+@import "components/checkout";
+@import "components/customer";
+@import "components/forgotten-password";
+@import "components/renew-password";
+@import "components/imageslider";
+@import "components/custom-text";
+@import "components/categories";
+@import "components/subcategories";
+ @import "components/products";
+@import "components/cart";
+// @import "components/block-reassurance";
+@import "components/quickview";
+@import "components/stores";
+@import "components/contact";
+@import "components/errors";
+@import "components/customization-modal";
+@import "components/sitemap";
+// @import "components/newsletter";
+@import "components/brands";
+@import "components/mini-panier";
+ //@import "components/pagemaster";
+
+
+
+// /*Modules*/
+@import "modules/customersignin/customersignin-v1";
+@import "modules/storelocator/storelocator-v1";
+// @import "modules/searchwidget/search-widget-v1";
+// @import "modules/megamenu/megamenu-v1";
+// @import "modules/newsletter/newsletter";
+// @import "modules/reassurance/reassurance";
+@import "modules/egbanner";
+
+// /*egBanner*/
+@import "modules/egbanner/egbanner-m1";
+@import "modules/egbanner/egbanner-m2";
+@import "modules/egbanner/egbanner-m3";
+@import "modules/egbanner/egbanner-m4";
+
+// carrousel
+// @import "modules/carrousel/carrousel";

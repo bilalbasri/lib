@@ -1,0 +1,46 @@
+// ========================================= //
+// styles
+// ========================================= //
+
+// Config
+@import "config/layout";
+
+// Tools
+@import "tools/bootstrap-grid/mixins/breakpoints";
+@import "tools/pxToEm";
+@import "tools/pxToRem";
+@import "tools/pxToVw";
+@import "tools/stripUnit";
+
+// Vars
+@import "vars/fontsFamily";
+@import "vars/colors";
+@import "vars/fonts";
+@import "vars/layout";
+
+// Commons
+@import "commons/core";
+@import "commons/typos";
+@import "commons/image";
+@import "commons/buttons";
+@import "commons/goToTop";
+@import "commons/inputs";
+@import "commons/alerts";
+@import "commons/icons";
+
+// Componenets
+@import "components/header";
+@import "components/footer";
+@import "components/banner";
+@import "components/search";
+@import "components/reassurance";
+@import "components/newsletter";
+@import "components/cards";
+@import "components/featuredproducts";
+@import "components/product-page";
+@import "components/listing";
+
+// Modules
+@import 'modules/carrousel/carrousel';
+
+// Pages

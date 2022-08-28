@@ -1,0 +1,50 @@
+.navigation {
+  width: 100%;
+  margin-bottom: 80px;
+
+  ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+
+    li {
+      margin: 0 4px;
+      text-align: center;
+
+      a,span {
+        font-size: 16px;
+        font-weight: 300;
+        color: $don-juan;
+        font-family: $font-base;
+        background-color: $white;
+        height: 28px;
+        width: 28px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        @include border(rem(1px), solid, $don-juan);
+        @include border_radius(rem(14px), rem(14px), rem(14px), rem(14px));
+        transition: all 0.2s ease-in-out;
+        &:hover{
+          background-color: $black;
+          color: $white;
+          border-color: transparent;
+        }
+      }
+
+      &.active {
+        a,span{
+          background-color: $black;
+          color: $white;
+          border-color: transparent;
+        }
+      }
+
+      &::before {
+        display: none;
+      }
+
+    }
+  }
+}

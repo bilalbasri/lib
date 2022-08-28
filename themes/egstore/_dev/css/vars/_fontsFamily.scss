@@ -1,0 +1,88 @@
+$fontPath: '../fonts';
+
+// Montserrat
+@font-face {
+    font-family: 'Montserrat';
+    src: url('#{$fontPath}/Montserrat/Montserrat-SemiBold.woff2') format('woff2'),
+        url('#{$fontPath}/Montserrat/Montserrat-SemiBold.woff') format('woff');
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Montserrat';
+    src: url('#{$fontPath}/Montserrat/Montserrat-Bold.woff2') format('woff2'),
+        url('#{$fontPath}/Montserrat/Montserrat-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Montserrat';
+    src: url('#{$fontPath}/Montserrat/Montserrat-Regular.woff2') format('woff2'),
+        url('#{$fontPath}/Montserrat/Montserrat-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Montserrat';
+    src: url('#{$fontPath}/Montserrat/Montserrat-Medium.woff2') format('woff2'),
+        url('#{$fontPath}/Montserrat/Montserrat-Medium.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+// Roboto
+@font-face {
+    font-family: 'Roboto';
+    src: url('#{$fontPath}/Roboto/Roboto-Bold.woff2') format('woff2'),
+        url('#{$fontPath}/Roboto/Roboto-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Roboto';
+    src: url('#{$fontPath}/Roboto/Roboto-Black.woff2') format('woff2'),
+        url('#{$fontPath}/Roboto/Roboto-Black.woff') format('woff');
+    font-weight: 900;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Roboto';
+    src: url('#{$fontPath}/Roboto/Roboto-Medium.woff2') format('woff2'),
+        url('#{$fontPath}/Roboto/Roboto-Medium.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Roboto';
+    src: url('#{$fontPath}/Roboto/Roboto-Regular.woff2') format('woff2'),
+        url('#{$fontPath}/Roboto/Roboto-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+// Icomoon
+@font-face {
+    font-family: 'icomoon';
+    src:  url('#{$fontPath}/Icomoon/icomoon.eot?9nby4b');
+    src:  url('#{$fontPath}/Icomoon/icomoon.eot?9nby4b#iefix') format('embedded-opentype'),
+        url('#{$fontPath}/Icomoon/icomoon.ttf?9nby4b') format('truetype'),
+        url('#{$fontPath}/Icomoon/icomoon.woff?9nby4b') format('woff'),
+        url('#{$fontPath}/Icomoon/icomoon.svg?9nby4b#icomoon') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: block;
+}

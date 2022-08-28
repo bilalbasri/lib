@@ -1,0 +1,50 @@
+.block-title {
+  .title-light {
+    text-align: center;
+    padding: 30px 0;
+    &:after {
+      content: "";
+      display: block;
+      width: 40px;
+      height: 2px;
+      background: $second-color;
+      margin: 8px auto 0 auto;
+    }
+  }
+  .subtitle-bold {
+    display: none;
+  }
+}
+.category {
+  .espacement {
+    border: 20px solid $second-color;
+    padding: 0;
+    position: relative;
+    margin: 5px;
+    .sous-category {
+      overflow: hidden;
+      .img-responsive:hover {
+        transform: scale(1.2);
+        transition: all 0.4s ease-in-out;
+      }
+    }
+
+    .description {
+      position: absolute;
+      top: 590px;
+      left: 10px;
+      .eg-banner-button {
+        //height: 50px;
+        text-align: center;
+        background: $second-color;
+        width: 270px;
+        padding: 15px;
+        a {
+          width: 100%;
+          color: $white;
+          font-size: 18px;
+        }
+      }
+    }
+  }
+}

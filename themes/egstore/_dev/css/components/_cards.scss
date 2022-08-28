@@ -1,0 +1,186 @@
+// ========================================= //
+// Cards
+// ========================================= //
+
+.product {
+    &-flag {
+        width: rem(65);
+        height: rem(28);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: var(--white);
+        font-size: rem(10);
+        font-weight: 400;
+        line-height: rem(20);
+        border-radius: rem(22);
+        position: absolute;
+        left: rem(9);
+        top: rem(-35);
+        &.discount {
+            background: var(--pink);
+            border-radius: 0;
+            font-size: rem(14);
+            font-weight: 800;
+            border: 1px solid var(--red-4);
+            top: unset;
+            left: 50%;
+            bottom: 0;
+            transform: translate(-50%, 50%);
+            z-index: 2;
+        }
+        &.promo {
+            background: var(--pink);
+        }
+        &.new {
+            background: var(--blue-fonce);
+        }
+    }
+    &__card {
+        display: flex;
+        padding: rem(12) 0 0;
+        article {
+            width: 100%;
+            background: var(--white);
+            position: relative;
+            border-radius: rem(20);
+            border: 1px solid var(--blue-light-1);
+            padding: rem(23) rem(10) rem(28);
+            display: flex;
+            flex-flow: column;
+            transition: var(--bezier);
+            &:hover {
+                box-shadow: inset 0 rem(7) rem(6) rgba(var(--black-rgb), 0.12);
+            }
+            .eg_wishlist {
+                background: transparent;
+                padding: 0;
+                width: unset;
+                height: unset;
+                min-width: unset;
+                top: rem(23);
+                right: rem(10);
+                box-shadow: none;
+                z-index: 4;
+                font-size: rem(18);
+                a {
+                    display: flex;
+                }
+                .not-added {
+                    color: rgba(var(--black-rgb), 0.44);
+                }
+            }
+        }
+    }
+    &__img {
+        position: relative;
+        text-align: center;
+        margin-bottom: rem(25);
+        a {
+            display: inline-block;
+        }
+    }
+    &__body {
+        position: relative;
+        flex: 1 1 auto;
+        display: flex;
+        flex-flow: column;
+    }
+    &__title {
+        margin-bottom: rem(15);
+        h2, h3 {
+            font-size: rem(12);
+            text-transform: initial;
+            text-align: center;
+            line-height: normal;
+        }
+        * {
+            color: var(--black);
+            text-decoration: none;
+        }
+        &--author {
+            color: rgba(var(--black-rgb), 0.4);
+            display: block;
+        }
+    }
+    &__infos {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-top: auto;
+        margin-bottom: rem(19);
+    }
+    &__price {
+        font-size: rem(11);
+        color: rgba(var(--black-rgb), 0.4);
+        .product-price-and-shipping {
+            font-size: rem(14);
+            font-weight: 800;
+            color: var(--black);
+            .has-discount & {
+                color: var(--pink);
+            }
+            .new & {
+                color: var(--blue-fonce);
+            }
+        }
+        .regular-price {
+            font-size: rem(11);
+            font-weight: 400;
+            text-decoration: line-through;
+            color: rgba(var(--black-rgb), 0.4);
+            margin-left: rem(6);
+        }
+    }
+    &__available {
+        display: inline-flex;
+        align-items: center;
+        font-size: rem(10);
+        color: var(--green);
+        span {
+            display: block;
+            background: var(--green);
+            border-radius: 50%;
+            width: rem(14);
+            height: rem(14);
+            margin-right: rem(4);
+        }
+    }
+    &__action {
+        button {
+            max-width: rem(151);
+            width: 100%;
+            margin: 0 auto;
+            display: block;
+            font-size: rem(10);
+            height: rem(28);
+            min-height: rem(28);
+            background: var(--blue-dark);
+            border-color: var(--blue-dark);
+            &:hover, &:active, &:active:hover, &:active:focus, &:focus {
+                color: var(--blue-dark);
+                background: var(--white);
+                border-color: var(--blue-dark);
+            }
+            .has-discount & {
+                background: var(--pink);
+                border-color: var(--pink);
+                &:hover, &:active, &:active:hover, &:active:focus, &:focus {
+                    color: var(--pink);
+                    background: var(--white);
+                    border-color: var(--pink);
+                }
+            }
+            .new & {
+                background: var(--blue-fonce);
+                border-color: var(--blue-fonce);
+                &:hover, &:active, &:active:hover, &:active:focus, &:focus {
+                    color: var(--blue-fonce);
+                    background: var(--white);
+                    border-color: var(--blue-fonce);
+                }
+            }
+        }
+    }
+
+}

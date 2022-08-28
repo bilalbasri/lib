@@ -1,0 +1,56 @@
+nav.breadcrumb {
+    background: transparent;
+    padding: 20px 0;
+    margin: 0;
+    @media #{$tab-min-2} {
+        display: none;
+    }
+    #index & {
+        display: none;
+    }
+    &[data-depth="1"] {
+        display: none;
+    }
+    ol {
+        padding-left: 0;
+        margin-bottom: 0;
+    }
+    li {
+        display: inline;
+        &::after {
+            content: "\e902";
+            font-family: "icomoon";
+            font-style: normal;
+            font-weight: 400;
+            font-variant: normal;
+            text-transform: none;
+            line-height: 1;
+            margin: 0 2px 0;
+            color: $main-bg-color;
+            font-size: 14px;
+            position: relative;
+            top: 3px;
+        }
+        &:last-child {
+            &::after {
+                content: "";
+            }
+        }
+        a {
+            color: $cr-link;
+            font-size: 12px;
+            font-weight: 400;
+            &:hover {
+                span {
+                    color: $initColor;
+                }
+            }
+        }
+        span {
+            font-weight: 400;
+            font-size: 12px;
+            color: $cr-link;
+            transition: all 0.2s ease-in-out;
+        }
+    }
+}

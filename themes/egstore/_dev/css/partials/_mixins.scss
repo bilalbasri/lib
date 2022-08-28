@@ -1,0 +1,44 @@
+@mixin search-box {
+  form {
+    position: relative;
+    input[type=text] {
+      height: 37.99px;
+      width: 100%;
+      font-size: 16px;
+      border: 0;
+      border-bottom: 1px solid $black;
+      border-radius: 0;
+      color: $black;
+      transition: 0.2s ease-in-out;
+      &::placeholder {
+        color: $black;
+        font-size: 16px;
+        opacity: 0.8;
+      }
+      &:focus {
+        &::placeholder {
+          opacity: 0;
+        }
+      }
+    }
+    button[type=submit] {
+      position: absolute;
+      background: none;
+      border: none;
+      bottom: 0.3125rem;
+      right: 0.125rem;
+      color: $gray;
+      .search:hover {
+        color: $brand-primary;
+      }
+    }
+  }
+}
+
+@mixin box-shadow {
+  box-shadow: 2px 2px 8px 0px rgba(0, 0, 0, 0.2);
+}
+
+@mixin box-shadow-light {
+  box-shadow: 2px 2px 4px 0px rgba(0, 0, 0, 0.2);
+}

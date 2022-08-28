@@ -1,0 +1,44 @@
+// ========================================= //
+// go to top
+// ========================================= //
+
+.go-to-top {
+    position: fixed;
+    background: var(--blue-dark);
+    border: none;
+    border-radius: 50%;
+    margin: 0;
+    padding: 0;
+    z-index: 4;
+    color: var(--white);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    opacity: 0;
+    transform: rotate(-90deg) translateX(-200%);
+    pointer-events: none;
+    transition: var(--bezier);
+    width: rem(45);
+    height: rem(45);
+    right: rem(20);
+    bottom: rem(20);
+    font-size: rem(30);
+    @include media-breakpoint-up (lg) {
+        font-size: rem(40);
+        right: rem(30);
+        bottom: rem(30);
+        width: rem(55);
+        height: rem(55);
+    }
+    &.is-visible {
+        opacity: 1;
+        pointer-events: auto;
+        transform: rotate(-90deg) translateX(0);
+    }
+    &:hover, &:active, &:active:hover, &:active:focus, &:focus {
+        opacity: 1;
+        background: var(--red);
+    }
+
+}

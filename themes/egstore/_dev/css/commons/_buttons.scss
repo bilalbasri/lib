@@ -1,0 +1,107 @@
+// ========================================= //
+// buttons
+// ========================================= //
+
+// V A R S
+$red : (
+        "color":                  var(--white),
+        "bg-color":               var(--red-1),
+        "border-color":           var(--red-2),
+        "hover-color":            var(--red-1),
+        "hover-bg-color":         var(--white),
+        "hover-border-color":     var(--red-2),
+        "active-color":           var(--red-1),
+        "active-bg-color":        var(--white),
+        "active-border-color":    var(--red-2),
+        "focus-color":            var(--red-1),
+        "focus-bg-color":         var(--white),
+        "focus-border-color":     var(--red-2),
+        "focus-box-shadow-color": var(--black),
+        "disabled-color":         var(--white),
+        "disabled-bg-color":      var(--red-1),
+        "disabled-border-color":  var(--red-2),
+);
+
+// M I X I N S
+@mixin make-button($options) {
+    text-decoration: none;
+    text-align: center;
+    text-transform: uppercase;
+    appearance: none;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    min-height: rem(40);
+    max-width: 100%;
+    float: none !important;
+    border-radius: rem(22);
+    border: rem(1) solid map-get($options, "border-color");
+    background: map-get($options, "bg-color");
+    color: map-get($options, "color");
+    cursor: pointer;
+    padding: rem(8) rem(10);
+    font-family: var(--Roboto);
+    font-size: rem(13);
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: rem(0.4);
+    transition: var(--bezier);
+    outline: none;
+    box-shadow: none;
+
+    @media (hover: hover) {
+        &:hover, &:active, &:active:hover, &:active:focus, &:focus {
+            background-color: map-get($options, "active-bg-color");
+            border-color: map-get($options, "active-border-color");
+            color: map-get($options, "active-color");
+            outline: none;
+            box-shadow: none;
+        }
+        &:focus-visible {
+            background-color: map-get($options, "focus-bg-color");
+            border-color: map-get($options, "focus-border-color");
+            color: map-get($options, "focus-color");
+            position: relative;
+            outline: none;
+            box-shadow: none;
+            &::after {
+                content:'';
+                display: block;
+                position: absolute;
+                top: rem(-4);
+                right: rem(-4);
+                bottom: rem(-4);
+                left: rem(-4);
+                box-shadow: inset 0 0 0 rem(2) map-get($options, "focus-box-shadow-color");
+                border-radius: rem(22);
+            }
+        }
+    }
+    &[disabled] {
+        background-color: map-get($options, "disabled-bg-color");
+        border-color: map-get($options, "disabled-border-color");
+        color: map-get($options, "disabled-color");
+        cursor: default;
+    }
+    [class*="icon"] {
+        display: flex;
+        align-items: center;
+        font-size: rem(18);
+        line-height: normal;
+        margin-right: rem(6);
+    }
+}
+
+.btn,
+.action,
+.btn-secondary,
+.btn-tertiary,
+.btn-primary,
+.btn-blue-light,
+.btn-transparent,
+.btn-comment,
+.btn-unstyle,
+.btn-black,
+.button--red {
+    @include make-button($red);
+}

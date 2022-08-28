@@ -1,0 +1,206 @@
+#_desktop_cart{
+  .body-mini-cart {
+    display: block;
+    position: absolute;
+    top: 100%;
+    right: 0;
+    z-index: 1001;
+    border: 1px solid #ddd;
+    background: $white;
+    width: rem(406px);
+    transition: var(--bezier);
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+    &.active {
+      opacity: 1;
+      visibility: visible;
+      pointer-events: auto;
+    }
+    .close {
+      top: rem(17px);
+      right: rem(15px);
+      &:before,
+      &:after {
+        background-color: $main-bg-color;
+      }
+    }
+  }
+  .mini-cart-top,
+  .empty-cart,
+  .fill-cart {
+    p {
+      color: $black;
+      line-height: 1;
+      margin: 0;
+    }
+  }
+  .mini-cart-top{
+    padding: rem(18px) rem(15px);
+    border-bottom: 1px solid $grayLight1;
+    p {
+      font-size: rem(20px);
+      font-weight: 400;
+      color: $black;
+    }
+  }
+  .mini-cart-middle{
+    padding: rem(18px) rem(15px);
+  }
+  .empty-cart{
+    margin: rem(5px) 0 rem(25px);
+    p {
+      font-size: rem(16px);
+    }
+  }
+  .fill-cart{
+    padding: 0 rem(20px);
+    p {
+      font-size: rem(20px);
+      text-align: center;
+      line-height: rem(28px);
+      font-weight: 500;
+    }
+  }
+  .mini-cart-footer {
+    padding: 0 rem(15px) rem(20px);
+    background-color: #e7e7e785;
+    .btn {
+      width: 100%;
+      height: rem(45px);
+      font-size: rem(16px);
+    }
+    .cart-total {
+      padding: rem(15px) 0;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      .label {
+        text-transform: uppercase;
+      }
+      span {
+        font-size: rem(16px);
+        color: $black;
+        line-height: 1;
+        &.value {
+          font-size: rem(18px);
+        }
+      }
+    }
+    .link-mini-cart {
+      margin-top: rem(15px);
+      ul {
+        li {
+          padding-bottom: rem(3px);
+          &:last-child{
+            padding-bottom: 0;
+            a {
+              pointer-events: none;
+            }
+          }
+          a {
+            font-size: rem(14px);
+            color: $black;
+          }
+        }
+      }
+    }
+  }
+  .product-line-bloc {
+    overflow-y: auto;
+    max-height: rem(330px);
+    /* width */
+    &::-webkit-scrollbar {
+      width: rem(2px);
+    }
+
+    /* Handle */
+    &::-webkit-scrollbar-thumb {
+      background: $main-bg-color;
+    }
+
+  }
+  .product-line {
+    &:not(:last-child){
+      border-bottom: 1px solid $grayLight1;
+      padding-bottom: rem(10px);
+      margin-bottom: rem(10px);
+    }
+  }
+  .mini-cart-product {
+    display: flex;
+    position: relative;
+    .product-quantity {
+      font-size: rem(17px);
+      padding-right: rem(6px);
+      margin-left: auto;
+      color: $black;
+      font-weight: bold;
+    }
+    .box-img {
+      position: relative;
+      width: rem(100px);
+      height: rem(100px);
+      display: flex;
+      align-items: flex-start;
+      justify-content: center;
+    }
+    .info {
+      padding-left: rem(10px);
+      max-width: calc(100% - rem(160px));
+      flex: 0 0 calc(100% - rem(160px));
+      .product-name-wrapper{
+        margin-bottom: 5px;
+      }
+      .product-name {
+        font-size: rem(16px);
+        color: $black;
+        font-weight: 400;
+      }
+      .eg-remove-from-cart {
+        font-size: rem(14px);
+        line-height: 1;
+        color: $main-bg-color;
+        text-decoration: underline;
+        display: inline-block;
+        &:hover {
+          i {
+            color: $black;
+          }
+        }
+      }
+    }
+    .info-price {
+      margin: 0;
+      .amount-minicart {
+        text-align: right;
+        margin: 0;
+        .product-discount {
+          padding: 0;
+          order: initial;
+          margin-bottom: 0;
+        }
+        .discount {
+          display: inline-block;
+          order: initial;
+          font-size: rem(14px);
+          margin: 0;
+          line-height: initial;
+          padding: 0;
+          color: $red;
+        }
+        .regular-price {
+          font-size: rem(14px);
+          color: $red;
+          margin: 0;
+        }
+        .price {
+          font-size: rem(18px);
+          font-weight: 400;
+          color: $black;
+        }
+      }
+    }
+  }
+
+}

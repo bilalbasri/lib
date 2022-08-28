@@ -1,0 +1,67 @@
+.lanceurs.md4 {
+	.block-title {
+		.title-light {
+			text-align: center;
+			padding: 30px 0;
+			&:after {
+				content: "";
+				display: block;
+				width: 40px;
+				height: 2px;
+				background: $main-bg-color;
+				margin: 8px auto 0 auto;
+			}
+		}
+		.subtitle-bold {
+			display: none;
+		}
+	}
+	.espacement {
+		padding: 5px;
+		position: relative;
+		margin: 0px;
+		> a {
+			display: block;
+		}
+		.sous-category {
+			overflow: hidden;
+			border: 20px solid $main-bg-color;
+			.img-responsive {
+				transition: all 0.4s ease-in-out;
+				&:hover {
+					transform: scale(1.2);
+				}
+			}
+		}
+
+		.description {
+			position: absolute;
+			top: 80%;
+			left: 0;
+			right: 0;
+			@media #{$tab-min} {
+				top: 70%;
+			}
+			.eg-banner-button {
+				//height: 50px;
+				text-align: center;
+				span  {
+					text-align: center;
+					background: $main-bg-color;
+					border: 1px solid $main-bg-color;
+					width: 60%;
+					padding: 15px;
+					color: $white;
+					font-size: 22px;
+					display: inline-block;
+					text-transform: uppercase;
+					font-weight: bolder;
+					&:hover {
+						color: $main-bg-color;
+						background-color: $white;
+					}
+				}
+			}
+		}
+	}
+}

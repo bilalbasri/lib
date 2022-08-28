@@ -1,0 +1,232 @@
+$white: #fff;
+$gray-dark: #363a42;
+$gray-darker: #232323;
+$gray: #7a7a7a;
+$gray-second: #9b9b9b;
+$gray-light: #f6f6f6;
+$gray-light-second: #dbdbdb;
+$gray-lighter: #f6f6f6;
+$gray-lighter-second: #f7f7f7;
+$border-gray: #ddd;
+$brand-primary: #24b9d7;
+$brand-secondary: #f39d72;
+$brand-success: #4cbb6c;
+$brand-warning: #ff9a52;
+$brand-danger: #ff4c4c;
+$current-step-color: #00c062;
+$label-color: $gray-darker;
+$btn-primary-color: #fff;
+$btn-primary-bg: $brand-primary;
+$btn-primary-border: transparent;
+$btn-secondary-color: $gray-darker;
+$btn-secondary-bg: $gray-lighter;
+$btn-secondary-border: transparent;
+$btn-border-radius: 0;
+$btn-disabled-background: #f6f6f6;
+$btn-disabled-color: #ddd;
+$input-border-color: rgba(0, 0, 0, 0.25);
+$headings-font-weight: 700;
+$tooltip-bg: $brand-danger;
+$border-radius: 0;
+$extra-small-space: 0.3125rem;
+$small-space: 0.625rem;
+$medium-space: 1.25rem;
+$large-space: 1.875rem;
+$extra-large-space: 2.5rem;
+$warning: #ff9a52;
+$warning-second: #f49d6e;
+$warning-hover: #fde7bb;
+$alert-warning-bg: rgba(255, 154, 82, 0.3);
+$alert-warning-border: $warning;
+$alert-warning-text: $gray-darker;
+$btn-warning-bg: $warning;
+$btn-warning-color: #fff;
+$btn-tertiary-color: #6c868e;
+$btn-tertiary-hover: #bbcdd2;
+$base-font-size: 1rem;
+$font-size-lg: 0.9375rem;
+$font-size-sm: 0.875rem;
+$font-size-xs: 0.8125rem;
+$font-size-h1: 1.375rem;
+$font-size-h2: 1.3125rem;
+$font-size-h3: 1.125rem;
+$font-size-h4: 1.125rem;
+$font-size-h5: 1rem;
+$font-size-h6: 0.9375rem;
+$display1-size: 3.125rem;
+$display1-weight: 600;
+$display2-size: 2.188rem;
+$display2-weight: 400;
+$display3-size: 1.563rem;
+$display3-weight: 400;
+$display4-size: 1.25rem;
+$display4-weight: 400;
+$text-muted: $gray;
+$radio-border-color: #979797;
+$second-color: #e40613;
+$egio-color: #19b793;
+$egio-color2: #0ee6b1;
+
+
+
+
+
+
+
+
+
+
+/*----Global variables Prestashop----*/
+$gray-dark: #363A42;
+$gray-darker: #232323;
+$gray: #7A7A7A;
+$gray-light: #F1F1F1;
+$gray-light-second: #DBDBDB;
+$gray-lighter: #f6f6f6;
+$gray-lighter-second: #F7F7F7;
+$brand-primary: #2fb5d2;
+$brand-secondary: #f39d72;
+$brand-success: #4cbb6c;
+$brand-warning: #ff9a52;
+$brand-danger: #ff4c4c;
+$label-color: $gray-darker;
+$btn-primary-color: #fff;
+$btn-primary-bg: $brand-primary;
+$btn-primary-border: transparent;
+$btn-secondary-color: $gray-darker;
+$btn-secondary-bg: $gray-lighter;
+$btn-secondary-border: transparent;
+$btn-border-radius: 0;
+$input-border-color: rgba(0, 0, 0, 0.25);
+$headings-font-weight: 700;
+$tooltip-bg: $brand-danger;
+$border-radius: 0;
+$extra-small-space: 0.3125rem;
+$small-space: 0.625rem;
+$medium-space: 1.25rem;
+$large-space: 1.875rem;
+$extra-large-space: 2.5rem;
+$warning: #FF9A52;
+$warning-second: #F49D6E;
+$warning-hover: #FDE7BB;
+$alert-warning-bg: rgba(255, 154, 82, 0.3);
+$alert-warning-border: $warning;
+$alert-warning-text: $gray-darker;
+$btn-warning-bg: $warning;
+$btn-warning-color: white;
+$btn-tertiary-color: #6C868E;
+$btn-tertiary-hover: #BBCDD2;
+$base-font-size: 1rem;
+$font-size-lg: 0.9375rem;
+$font-size-sm: 0.875rem;
+$font-size-xs: 0.8125rem;
+$font-size-h1: 1.375rem;
+$font-size-h2: 1.25rem;
+$font-size-h3: 1.125rem;
+$font-size-h4: 1.125rem;
+$font-size-h5: 1rem;
+$font-size-h6: 0.9375rem;
+$display1-size: 3.125rem;
+$display1-weight: 600;
+$display2-size: 2.188rem;
+$display2-weight: 400;
+$display3-size: 1.563rem;
+$display3-weight: 400;
+$display4-size: 1.25rem;
+$display4-weight: 400;
+$text-muted: $gray;
+
+$NotoSansPath: "~notosans-fontface/fonts";
+$NotoSansVersion: "1.0.1";
+
+/*----END Global variables Prestashop----*/
+
+
+/*----Global init variables colors----*/
+$white: #ffffff;
+$btn-primary-color: #ffffff;
+$wild-sand: #F5F5F5;
+$alto: #D1D1D1;
+$nobel: #B3B1B1;
+$dusty-Gray: #9C9C9C;
+$gray :#8C8C8C;
+$gray-lighten: #cfd1d0;
+$don-juan: #595454;
+$black: #000000;
+$buttercup: #F3AC1E;
+$ecstasy: #FB7610;
+$bermuda: #74D1D6;
+$cornflower-Blue: #5282E8;
+$dark-blue: #11244C;
+$steel-blue: #5475BC;
+$san-Juan: #2C5871;
+$doveGray: #707070;
+$gallery: #EFEFEF;
+$atlantis: #91D040;
+$scooter: #42BDDC;
+$cloudBurst: #203158;
+$rhino: #304269;
+$greenLight: #1ab894;
+$red: #ec4249;
+$green: #74C934;
+$blueLight: #CAD1E1;
+$paris-daisy:#FFFA6B;
+
+$initColor: #000;
+
+$grayWhite: #f4f4f4;
+$cr-link: #000000;
+$blueLight1: #9ad1dc;
+$blueLight2: #f2f7f7;
+$blueLight3: #0094cd;
+$blueDark1: #16216A;
+$blueDark2: #0d3880;
+$blueDark3: #295998;
+$grayLight1: #d8d8d8;
+$grayLight2: #d6d6d6;
+$grayLight3: #f8f8f8;
+$grayLight4: #E9E9E9;
+$grayLight5: #FAFBFD;
+$grayLight6: #8E918C;
+$grayLight7: #dedede;
+$grayLight8: #212121;
+$redDark: #dc1f1b;
+$redDark2: #d51317;
+$green1: #0dae5e;
+$green2: #0a5;
+$color1: #158bc7;
+$color2: #f08b23;
+$color3: #8bc9bf;
+$color4: #e3147e;
+
+
+
+/*----END Global init variables colors----*/
+
+
+/*----Callback default img source----*/
+$img : '../../assets/img/' !default;
+/*----END Callback default img source----*/
+
+
+/*----Global init fonts----*/
+$font-base: 'NeutraText-BookAlt',
+sans-serif;
+$font-base-light: 'NeutraText-Light',
+sans-serif;
+$font-base-bold: 'NeutraText-Bold';
+$font-icon: 'icomoon';
+/*----END Global init fonts----*/
+
+
+/*----Global page width variables----*/
+$max-w :1600px;
+$container-w :1300px;
+$page: 1280px;
+$page-content: 1024px;
+$page-cms: 1600px;
+$page-services: 1600px;
+$page-min: 744px;
+$container-detail: 752px;
+$container-detail-1: 1140px;
+/*----END Global page width variables----*/

@@ -1,0 +1,105 @@
+.search-widget {
+  display: inline-block;
+  width: 100%;
+  min-width: auto;
+  text-align: center;
+  @include search-box;
+  form {
+    max-width: 407.99px;
+    margin: 0 auto;
+    #s-error {
+      position: absolute;
+      bottom: -18px;
+    }
+  }
+  button {
+    outline: none;
+    box-shadow: none;
+    cursor: pointer;
+    &:focus {
+      outline: none;
+      box-shadow: none;
+    }
+    i {
+      color: $black;
+      font-size: 22px;
+    }
+  }
+}
+
+#checkout {
+  #search_widget {
+    display: none; /* Not ideal solution by allows to reuse same hooks/templates */
+  }
+}
+
+#pagenotfound {
+  .page-content {
+    #search_widget {
+      width: 100%;
+    }
+  }
+}
+
+.page-not-found {
+  .search-widget {
+    form {
+      display: inline-block;
+    }
+  }
+}
+
+.search-mobile-form {
+  max-height: 100vh;
+  overflow: auto;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 50;
+  width: 100%;
+  padding: 40px 20px 30px;
+  background-color: $white;
+  border-bottom: 1px solid $grayLight2;
+  transform: translateY(-100%);
+  transition: .3s ease-in-out;
+  &.open-popup {
+    transform: translateY(0);
+  }
+  .search-widget {
+    width: 100%;
+  }
+  .close {
+    top: 10px;
+  }
+}
+.overPopupSearch {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 15;
+  width: 100%;
+  height: 100%;
+  transition: opacity 0.5s ease, visibility 0.5s ease;
+  background: rgba(0, 0, 0, 0.55);
+  opacity: 0;
+  visibility: hidden;
+  overflow: hidden;
+
+  &.activeOverPopup {
+    opacity: 1;
+    visibility: initial;
+  }
+}
+.search-grid {
+  text-align: center;
+}
+.search-mobile {
+  display: none;
+  @media #{$tab-min} {
+    display: block;
+    margin-right: 10px;
+  }
+  .icon-search {
+    font-size: 23px;
+  }
+}

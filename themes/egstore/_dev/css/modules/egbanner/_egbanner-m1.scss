@@ -1,0 +1,153 @@
+.lanceurs.md1 {
+	padding: 0;
+	max-width: 100%;
+	float: left;
+	margin: 0 auto 60px;
+
+	@media #{$tab-max} {
+		max-width: 100%;
+		margin: 0 auto 50px;
+	}
+
+	.item-lanceur {
+		@media #{$tab-min-2} {
+			margin-bottom: 20px;
+		}
+	}
+
+	.item-img {
+		position: relative;
+		height: 500px;
+		transition: all .4s ease-in-out;
+		overflow: hidden;
+
+		@media #{$tab-min} {
+			height: 350px;
+		}
+
+		&:hover {
+			&:after,
+			&:before {
+				width: 100%;
+			}
+
+			.eg-banner-button {
+				opacity: 1;
+			}
+
+			img {
+				transform: scale(1.1);
+			}
+		}
+
+		&:after,
+		&:before {
+			content: '';
+			position: absolute;
+			background: #aaaaaa5e;
+			width: 0;
+			left: 50%;
+			height: 1px;
+			transition: all 0.4s ease-in-out;
+			transform: translateX(-50%);
+		}
+
+		&:after {
+			bottom: -18px;
+		}
+
+		&:before {
+			top: -18px;
+		}
+
+		img {
+			height: 100%;
+			width: 100%;
+			object-fit: cover;
+			transition: all 0.4s ease-in-out;
+		}
+
+		.eg-banner-button {
+			position: absolute;
+			bottom: 120px;
+			left: 0;
+			right: 0;
+			text-align: center;
+			opacity: 0;
+			transition: all 0.3s ease-in-out;
+
+			.btn {
+				max-width: 272px;
+				width: 100%;
+				outline: none;
+				transition: all 0.4s ease-in-out;
+			}
+
+			a {
+				padding: 5px 20px;
+				line-height: initial;
+				text-transform: initial;
+				font-family: $font-base;
+				font-weight: 400;
+				height: auto;
+				font-size: rem(17px);
+				// color: $bc-color1-text;
+				// background-color: $bc-color1;
+				transition: all 0.2s ease-in-out;
+
+				&:hover {
+					// background-color: $br-color5;
+				}
+			}
+		}
+	}
+
+	.eg-banner-desc {
+		margin-top: 12px;
+
+		p {
+			font-size: 20px;
+			color: #000;
+			margin-bottom: 10px;
+			line-height: 1;
+
+			span {
+				color: #000;
+				font-size: 20px;
+			}
+		}
+	}
+
+	.slick-next,
+	.slick-prev {
+		color: $black;
+
+		&:before {
+			font-size: rem(50px);
+			font-weight: 400;
+			color: $black;
+		}
+
+		&:hover {
+			&::before {
+				color: $main-bg-color;
+			}
+		}
+	}
+
+	.slick-next {
+		right: 0;
+		&::before {
+			right: initial;
+			left: 0;
+		}
+	}
+
+	.slick-prev {
+		left: 0;
+		&::before {
+			left: initial;
+			right: 0;
+		}
+	}
+}
